@@ -8,3 +8,5 @@ Los archivos con terminación '.old' son los archivos originales con sus indicac
 Se añadirán más archivos de ejemplos con el tiempo.
 
 ### Lista de proyectos de ejemplos:
+
+- 01-names - Ejemplos de nombres de variables.
