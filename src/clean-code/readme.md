@@ -13,3 +13,4 @@ Se añadirán más archivos de ejemplos con el tiempo.
 - 02-names-types - Ejemplos de nombres de variables por tipos.
 - 03-functions - Ejemplos de nombres de funciones y mejoras útiles.
 - 04-homeworks - Practica sobre mejoras a funciones.
+- 05-DRY - Practica sobre DRY (Don't Repeat Yourself).
