@@ -31,6 +31,10 @@ Errores comunes que afectan al SRP:
 
 Abierto y Cerrado.
 
+Establece que las entidades de software (clases, módulos, métodos, etc.) deben estar abiertas para la extensión, pero cerradas para la modificación.
+
+Se puede lograr de otras maneras, como el uso de la herencia o mediante patrones de diseño de composición como el patrón de estrategia.
+
 ## Liskov Substitution Principle
 
 Sustitución de Liskov.
