@@ -39,6 +39,12 @@ Se puede lograr de otras maneras, como el uso de la herencia o mediante patrones
 
 Sustitución de Liskov.
 
+Si se tiene una clase padre que hereda a una clase hija, la clase hija no debe afectar el funcionamiento del padre.
+
+Una forma de detectarlo es mediante las pruebas, si las pruebas de la clase padre no funcionan para la hija, esto afecta a este principio.
+
+> "Si parece un pato, hace quack como un pato, pero necesita baterías, probablemente la abstracción sea la incorrecta"
+
 ## Interface Segregation Principle
 
 Segregación de interfaz.
