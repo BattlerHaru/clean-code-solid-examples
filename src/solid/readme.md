@@ -54,3 +54,12 @@ Este principio establece que los clientes no deberían verse forzados a depender
 ## Dependency Inversion Principle
 
 Inversión de dependencias.
+
+Los componentes mas importantes son aquellos centrados en resolver el problema subyacente al negocio.
+
+Los menos importantes son los que están próximos a la infraestructura, es decir, aquellos relacionados con la UI, la persistencia, la comunicación con API externas, etc.
+
+- Los módulos de alto nivel no deberían depende de módulos de bajo nivel.
+- Ambos deberían depender de abstracciones.
+- Las abstracciones no deberían depende de detalles.
+- Los detalles deberían depender de abstracciones.
