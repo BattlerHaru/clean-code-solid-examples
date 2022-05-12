@@ -49,6 +49,8 @@ Una forma de detectarlo es mediante las pruebas, si las pruebas de la clase padr
 
 Segregación de interfaz.
 
+Este principio establece que los clientes no deberían verse forzados a depender de interfaces que no utilizan.
+
 ## Dependency Inversion Principle
 
 Inversión de dependencias.
