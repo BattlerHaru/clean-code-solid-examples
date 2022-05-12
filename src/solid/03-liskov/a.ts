@@ -1,30 +1,14 @@
-import { Tesla, Audi, Toyota, Honda } from './b';
+import { Tesla, Audi, Toyota, Honda, Ford, Vehicle } from './b';
 
 
 (() => {
 
-    const printCarSeats = (cars: (Tesla | Audi | Toyota | Honda)[]) => {
+    const printCarSeats = (cars: Vehicle[]) => {
 
-        for (const car of cars) {
+        cars.forEach(car => {
+            console.log(car.constructor.name, car.getNumberOfSeats())
+        })
 
-            if (car instanceof Tesla) {
-                console.log('Tesla', car.getNumberOfTeslaSeats())
-                continue;
-            }
-            if (car instanceof Audi) {
-                console.log('Audi', car.getNumberOfAudiSeats())
-                continue;
-            }
-            if (car instanceof Toyota) {
-                console.log('Toyota', car.getNumberOfToyotaSeats())
-                continue;
-            }
-            if (car instanceof Honda) {
-                console.log('Honda', car.getNumberOfHondaSeats())
-                continue;
-            }
-
-        }
     }
 
     const cars = [
@@ -32,6 +16,7 @@ import { Tesla, Audi, Toyota, Honda } from './b';
         new Audi(2),
         new Toyota(5),
         new Honda(5),
+        new Ford(2)
     ];
 
 
