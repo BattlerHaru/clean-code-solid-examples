@@ -1,10 +1,13 @@
 import { PostService } from './b';
+import { JsonDataBaseService, LocalDataBaseService, WebApiPostService } from './c';
 
 
 // Main
 (async () => {
 
-    const postService = new PostService();
+    const provider = new WebApiPostService();
+
+    const postService = new PostService(provider);
 
     const posts = await postService.getPosts();
 

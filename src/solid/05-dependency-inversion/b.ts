@@ -1,4 +1,4 @@
-import { LocalDataBaseService } from "./c";
+import { PostProvider } from './c';
 
 export interface Post {
     body: string;
@@ -12,11 +12,11 @@ export class PostService {
 
     private posts: Post[] = [];
 
-    constructor() { }
+    constructor(private postProvider: PostProvider) { }
 
     async getPosts() {
-        const jsonDB = new LocalDataBaseService();
-        this.posts = await jsonDB.getFakePosts();
+
+        this.posts = await this.postProvider.getPosts();
 
         return this.posts;
     }
